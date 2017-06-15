@@ -38,7 +38,7 @@ export default function request(url, config = {}, onlyJsonResponse=true) {
                 };
         })
         .catch((err) => {
-            console.error(err);
+            console.error(err.message);
             throw err;
         });
 }
